@@ -1,23 +1,16 @@
 <template>
   <div id="app">
-    <h1>{{title}}</h1>
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'App',
-  data() {
-    return {
-      title: '一线生活通'
-    }
-  }
+  name: 'App'
 }
 </script>
 
 <style lang="scss" scoped>
-html,
-body,
 #app,
 .container {
   height: 100%;
