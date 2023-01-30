@@ -11,6 +11,7 @@
     "axios": "^1.2.6",
     "better-scroll": "^2.5.0",
     "core-js": "^3.6.5",
+    "form-data": "^4.0.0",
     "qs": "^6.11.0",
     "vue": "^2.6.11",
     "vue-awesome-swiper": "^5.0.1",

@@ -1,15 +1,19 @@
 <template>
   <div class="container">
     <div class="wrapper">
-      <div class="header">
-        <h1>{{title}}</h1>
-      </div>
+      <home-header></home-header>
     </div>
   </div>
 </template>
 
 <script>
+import HomeHeader from '@/components/Header/Home'
+
 export default {
+  name: 'Index',
+  components: {
+    HomeHeader
+  },
   data() {
     return {
       title: '美团生活通'
