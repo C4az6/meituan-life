@@ -28,7 +28,7 @@ export default {
 
 .wrapper {
   .header {
-    @include vh-center;
+    // @include vh-center;
     height: $headerHeight;
     background-color: $defaultBgColor;
     h1 {
