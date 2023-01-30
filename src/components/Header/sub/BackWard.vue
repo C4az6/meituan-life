@@ -12,7 +12,6 @@ export default {
   },
   methods: {
     onRouteBack() {
-      console.log("this: ", this);
       // 返回上一页
       this.$router.go(-1);
     }

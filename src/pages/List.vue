@@ -1,15 +1,17 @@
 <template>
   <div class="container">
-    <div class="wrapper">
-      <div class="header">
-        <h1>{{title}}</h1>
-      </div>
-    </div>
+    <common-header :title="title"></common-header>
   </div>
 </template>
 
 <script>
+import CommonHeader from '@/components/Header/Common'
+
 export default {
+  name: 'List',
+  components: {
+    CommonHeader
+  },
   data() {
     return {
       title: '列表页面'

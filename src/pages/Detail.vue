@@ -1,15 +1,16 @@
 <template>
   <div class="container">
-    <div class="wrapper">
-      <div class="header">
-        <h1>{{title}}</h1>
-      </div>
-    </div>
+    <common-header :title="title"></common-header>
   </div>
 </template>
 
 <script>
+import CommonHeader from '@/components/Header/Common'
 export default {
+  name: 'Detail',
+  components: {
+    CommonHeader
+  },
   data() {
     return {
       title: '详情页面'
@@ -19,17 +20,4 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "~style/mixins.scss";
-@import "~style/variables.scss";
-
-.wrapper {
-  .header {
-    @include vh-center;
-    height: $headerHeight;
-    background-color: $defaultBgColor;
-    h1 {
-      font-size: 0.18rem;
-    }
-  }
-}
 </style>
